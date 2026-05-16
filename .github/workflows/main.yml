@@ -1,0 +1,24 @@
+.github/workflows/main.yml
+name: My First GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Print Message
+        run: echo "GitHub Action is running successfully!"
+
+      - name: Show Current Date
+        run: date
+
+      - name: List Files
+        run: ls -la
