@@ -1,5 +1,5 @@
 .github/workflows/main.yml
-name: My First GitHub Action
+name: First GitHub Action
 
 on:
   push:
@@ -7,18 +7,13 @@ on:
       - main
 
 jobs:
-  build-job:
+  demo-job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Print Message
-        run: echo "GitHub Action is running successfully!"
+      - name: Print Hello
+        run: echo "Hello GitHub Action Working!"
 
-      - name: Show Current Date
-        run: date
-
-      - name: List Files
-        run: ls -la
