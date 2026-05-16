@@ -1,5 +1,5 @@
 .github/workflows/main.yml
-name: First GitHub Action
+name: My First GitHub Action
 
 on:
   push:
